@@ -16,6 +16,10 @@ app.get('/user-list',(req,res)=> {
                     id:2,
                     name:'user 2'
                 },
+                {
+                    id:3,
+                    name:'user 3'
+                },
             ]
         }
     }
