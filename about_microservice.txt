@@ -1,0 +1,18 @@
+//ABOUT//
+Api Gateway -> It has the complete path of all apis
+Services -> different types of apis to perform different taks 
+
+//EXAMPLE//
+Api Gateway -> port : 8000
+Services:
+    post -> port : 8070 
+    chat -> port : 8080
+    user -> port : 8090 
+    etc..
+
+//HOW IT WORKS//
+
+localhost:8000/post/...
+
+
+    
