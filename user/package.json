@@ -1,0 +1,24 @@
+{
+  "name": "namebuzz-nodejs-mobileapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digi-devs/namebuzz-nodejs-mobileapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digi-devs/namebuzz-nodejs-mobileapi/issues"
+  },
+  "homepage": "https://github.com/digi-devs/namebuzz-nodejs-mobileapi#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
