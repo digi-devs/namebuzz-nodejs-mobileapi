@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "friends": "nodemon ../friends/server.js",
+    "user": "nodemon ../user/server.js",
+    "api": "nodemon server.js",
+    "dev": "concurrently --kill-others \"npm run friends\" \"npm run user\" \"npm run api\""
   },
   "keywords": [],
   "author": "",
@@ -13,5 +16,8 @@
     "fast-gateway": "^3.4.5",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
   }
 }
