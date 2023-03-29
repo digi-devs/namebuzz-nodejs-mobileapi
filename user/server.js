@@ -1,29 +1,14 @@
 const express = require('express');
 const app = express();
-
-const port = 8081;
+const db = require('../api-gateway/db.js'); 
+const port = 3001;
 
 app.get('/user-list',(req,res)=> {
-    // data from database
-    let response = {
-        data : {
-            item : [
-                {
-                    id:1,
-                    name:'user 1'
-                },
-                {
-                    id:2,
-                    name:'user 2'
-                },
-                {
-                    id:3,
-                    name:'user 3'
-                },
-            ]
-        }
-    }
-    res.status(200).json(response)
+    db.query("SELECT * FROM user", function (err, result, fields) {
+        if (err) throw err;
+        res.status(200).json({err_code: "",
+        msg: "Getting All Users to response", data: result });
+      });
 })
 
 app.listen(port,()=>{

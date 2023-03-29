@@ -1,19 +1,29 @@
 const express = require('express');
-const app = express();
-const db = require('../api-gateway/db.js'); 
+const app = express(); 
 const port = 3002;
 
 // Apis
 app.get('/friends-list',(req,res)=> {
     // data from database
-    db.query("SELECT * FROM user", function (err, result, fields) {
-        if (err) throw err;
-        res.status(200).json({err_code: "",
-        msg: "Posts added to response", data: result });
-      });
-
-    
-    
+    let response = {
+        data : {
+            item : [
+                {
+                    id:1,
+                    name:'friend 1'
+                },
+                {
+                    id:2,
+                    name:'friend 2'
+                },
+                {
+                    id:3,
+                    name:'friend 3'
+                },
+            ]
+        }
+    }
+    res.status(200).json(response)
 })
 
 app.listen(port,()=>{

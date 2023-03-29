@@ -1,6 +1,6 @@
 //ABOUT//
 Api Gateway -> It has the complete path of all apis
-Services -> different types of apis to perform different taks 
+Services -> different types of apis to perform different taskss 
 
 //EXAMPLE//
 Api Gateway -> port : 8000

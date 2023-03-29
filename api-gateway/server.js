@@ -16,13 +16,13 @@ const server =  gateway({
     routes: [
         {
             prefix:'/user',
-            target:`${urlPath}8081/`,
-            middlewares:[checkAuth],
+            target:"http://localhost:3001",
+           // middlewares:[checkAuth],
             hooks:{}
         },
         {
-            prefix:'/friends',
-            target:`${urlPath}8082/`,
+            prefix:'friends',
+            target:"http://localhost:3002/",
             hooks:{}
         }
     ]
