@@ -5,6 +5,7 @@ var connection = mysql.createConnection({
     user: 'u624153904_namebuzz', //
     password: 'Name@buzz1234', //
     database: 'u624153904_namebuzz',
+    port:3306,
     max: 10,
     connectionTimeoutMillis: 1000,
     idleTimeoutMillis: 1000
