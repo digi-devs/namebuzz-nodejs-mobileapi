@@ -8,6 +8,7 @@ app.get('/user-list',(req,res)=> {
         if (err) throw err;
         res.status(200).json({err_code: "",
         msg: "Getting All Users to response", data: result });
+        res.end();
       });
 })
 

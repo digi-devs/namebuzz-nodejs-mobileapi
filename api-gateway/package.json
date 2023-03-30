@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "friends": "nodemon ../friends/server.js",
-    "user": "nodemon ../user/server.js",
-    "api": "nodemon server.js",
+    "friends": "node ../friends/server.js",
+    "user": "node ../user/server.js",
+    "api": "node server.js",
     "dev": "concurrently --kill-others \"npm run friends\" \"npm run user\" \"npm run api\""
   },
   "keywords": [],
