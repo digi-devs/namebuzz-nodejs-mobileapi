@@ -22,7 +22,7 @@ const server =  gateway({
         },
         {
             prefix:'friends',
-            target:"http://localhost:3002/",
+            target:"http://localhost:3002",
             hooks:{}
         }
     ]
@@ -32,5 +32,5 @@ const server =  gateway({
 server.get('/serverTest',(req,res)=>res.send('Gateway Working...'))
 
 server.start(port).then(server=>{
-    console.log('Api Gateway is Running')
+    console.log(`Api Gateway is Running on => http://localhost:${port}`)
 })
